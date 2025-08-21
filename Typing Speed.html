@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Speed Counter</title>
+</head>
+<body>
+
+    <h2>Typing Speed Counter (CPS)</h2>
+    <textarea id="typingArea" rows="6" cols="40" placeholder="Start typing here..."></textarea>
+    <p>Characters per second: <span id="cps">0</span></p>
+
+    <script>
+        let startTime = null;
+        let charCount = 0;
+
+        const textarea = document.getElementById("typingArea");
+        const cpsDisplay = document.getElementById("cps");
+
+        textarea.addEventListener("keypress", function () {
+           
+            if (startTime === null) {
+                startTime = Date.now();
+            }
+
+            charCount++;
+
+            let currentTime = Date.now();
+            let secondsPassed = (currentTime - startTime) / 1000;
+
+            let cps = (charCount / secondsPassed).toFixed(2);
+            cpsDisplay.innerText = cps;
+        });
+    </script>
+
+</body>
+</html>

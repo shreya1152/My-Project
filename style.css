@@ -1,0 +1,63 @@
+
+.header{
+    padding: 20px;
+    background-color: aliceblue;
+}
+.img{
+    margin: 20px;
+}
+.ho{
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+.container{
+    background-color: lightskyblue;
+}
+.main{
+    text-decoration: none;
+    color: black; 
+    color: black
+}
+#intro{
+    display: flex;
+    margin: 20px;
+}
+#about{
+    text-decoration: none;
+}
+.banner{
+    border: 5px solid black;
+    border-radius: 5%;
+}
+.main-feature{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 5px;
+    background-color: lightslategray;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5px;
+    background-color: lightslategray;
+    border-bottom: 1px;
+}
+.main1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin:0px;
+    justify-content: right;
+    justify-items: right;
+    font-style: oblique;
+    font-size: large;
+}
+h1 a{
+    text-align: center;
+    text-transform: uppercase;
+}
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30px;
+}

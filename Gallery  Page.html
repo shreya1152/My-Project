@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: lavender;
+    }
+    .gallery a {
+        text-decoration: none;
+        color: black;
+        margin-top: 20px;
+    }
+    .IM {
+        margin: 10px;
+        padding: 20px;
+        justify-content: space-evenly
+    }
+    .img{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 10px;
+    }
+    .video{
+        height: 200px;
+        width: 700px;
+    }
+</style>
+
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <a href="index.html">Overview</a>
+            <a href="events.html">Collge Events</a>
+            <a href="clubs.html">Student Clubs</a>
+            <a href="gallery.html">Photo Gallery</a>
+        </div>
+        <div class="img">
+            <div class="IM">
+                <img src="C:\Users\ADMIN\OneDrive\Pictures\photo-1605136292546-36994b3f5b59.jpg" height="200"
+                    width="400">
+            </div>
+            <div class="IM">
+                <img src="C:\Users\ADMIN\OneDrive\Pictures\photo-1605136292546-36994b3f5b59.jpg" height="200"
+                    width="400">
+            </div>
+            <div class="IM">
+                <img src="C:\Users\ADMIN\OneDrive\Pictures\photo-1605136292546-36994b3f5b59.jpg" height="200"
+                    width="400">
+            </div>
+        </div>
+        <div class="video">
+            <video height="300" width="600" controls autoplay muted source
+                    src="C:\Users\ADMIN\Videos\WhatsApp Video 2025-07-05 at 20.03.41_355d26b1.mp4">type="video/mp4"</video>
+        </div>
+    </div>
+</body>
+
+</html>

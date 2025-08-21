@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grid task</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #div {
+        height: 100px;
+        width: 100px;
+        border: 2px solid #000;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    #div1{
+        height: 100px;
+        width: 100px;
+        border: 2px solid #000;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .div{
+        display: flex;
+    }
+    .three{
+        border: 1px solid #000;
+        height: 100px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box{
+        border: 1px solid #000;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #row{
+        border: 1px solid #000;
+        height: 50px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="div">1</div>
+        <div id="div">2</div>
+        <div id="div">
+            <div class="div">
+                <div class="three">3</div>
+                <div class="three">4</div>
+            </div>
+        </div>
+        <div id="div">5</div>
+        <div id="div">
+            <div class="div">
+                <div class="row">
+                    <div class="box">6</div>
+                    <div class="box">7</div>
+                </div>
+                <div class="row">
+                    <div class="box">8</div>
+                    <div class="box">9</div>
+                </div>
+            </div>
+        </div>
+        <div id="div">10</div>
+        <div id="div1">
+            <div id="row">11</div>
+            <div id="row">12</div>
+        </div>
+        <div id="div">13</div>
+        <div id="div">14</div>
+    </div>
+</body>
+
+</html

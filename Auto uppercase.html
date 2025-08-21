@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Uppercase on Blur</title>
+</head>
+<body>
+    <h3>Type something and click outside the box</h3>
+
+    <input type="text" id="myInput" placeholder="Type here" onblur="toUpperCaseText()">
+
+    <script>
+        function toUpperCaseText() {
+            let input = document.getElementById("myInput");
+            
+            input.value = input.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Landing Page</title>
+  <link rel="stylesheet" href="Boostrap file.css">
+</head>
+<style>
+  .sub {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    right: 35%;
+    color: black;
+    font-style:initial;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .Hero-Section img {
+    opacity: 0.7;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .footer-container {
+    color: white;
+    text-decoration: none;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: black;
+  }
+
+  .main a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+  }
+
+  .logo {
+    background-color: black;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: black;
+    padding: 10px 0;
+  }
+  button{
+    width: 150px;
+  }
+</style>
+
+<body>
+  <div class="container-fluid">
+    <div class="header">
+      <div class="mein">
+        <div class="logo">
+          <div><img src="C:\Users\ADMIN\OneDrive\Pictures\black-gold-real-estate-logo-vector-46378526.jpg" height="40"
+              width="200"></div>
+        </div>
+        <div class="main">
+          <a href="#home">Home |</a>
+          <a href="#Listing">Listing |</a>
+          <a href="#About">About |</a>
+          <a href="#Contact">Contact |</a>
+        </div>
+      </div>
+    </div>
+    <div class="Hero-Section">
+      <div id="home">
+        <img src="C:\Users\ADMIN\OneDrive\Pictures\Real-estate1.jpg" height="500" width="100%">
+        <div class="sub">
+          <h1>Find Your Dream Home</h1>
+          <p>Explore the best properties in your city</p>
+        </div>
+      </div>
+    </div><br><br>
+    <div id="Listings" class="container">
+      <h1>Featured Properties</h1><br>
+      <div class="row text-center">
+        <div class="col-md-4 border 50px black">
+          <img src="C:\Users\ADMIN\OneDrive\Pictures\1740115640_new-project-11.jpg" height="200" width="400">
+          <h2>Luxury Villa</h2>
+          <p>A beautiful 4 BHK villa with garden and pool in the suburbs.</p>
+        </div>
+        <div class="col-md-4 border 50px black">
+          <img src="C:\Users\ADMIN\OneDrive\Pictures\modern-apartment-moscow-ariana-ahmad-design-1.jpg" height="200"
+            width="400">
+          <h2>Modern Apartment</h2>
+          <p>Spacious 2 BHK apartment in city center with all amenities.</p>
+        </div>
+        <div class="col-md-4 border 50px black">
+          <img src="C:\Users\ADMIN\OneDrive\Pictures\office-with-lot-desks-computers-1200x799.jpg" height="200"
+            width="400">
+          <h2>Commercial Space</h2>
+          <p>Ideal location for your new office or retail store.</p>
+        </div>
+      </div>
+    </div><br><br>
+    <div id="About" class="container">
+      <h2>Why Choose RealEstatePro?</h2>
+      <div class="row">
+        <div class="col-md-6 bg-light">
+          <p>We offer trusted listings, experienced agents, and competitive prices. Whether you're buying or renting,
+            we guide you through every step.</p>
+          <ul>
+            <li>Verified Properties</li>
+            <li>Expert Support</li>
+            <li>Best Market Deals</li>
+            <li>Customer Satisfaction</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <img src="C:\Users\ADMIN\OneDrive\Pictures\maxresdefault.jpg" height="200" width="500">
+        </div>
+      </div>
+    </div><br><br>
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div id="Contact">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control p-3" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control p-3" placeholder="Email Address" required>
+          </div>
+          <div class="col-md-12">
+            <textarea class="form-control p-3" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <div class="col-md-12 text-center">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div><br><br>
+    <div class="footer-container text-center bg-dark">
+      <div class="container">
+        <p>2025 RealEstatePro. All Rights Reserved.</p>
+        <p>123 Main St, Your City, India | Phone: +91 98765 43210</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/"><img src="C:\Users\ADMIN\OneDrive\Pictures\images.jpeg" height="40"
+              width="50"></a>
+          <a href="https://en.wikipedia.org/wiki/Twitter,_Inc."><img
+              src="C:\Users\ADMIN\OneDrive\Pictures\twitter-logo-bird-isolated-over-white-background-social-media-networking-communications-symbol-breaking-news-130861855.webp"
+              height="40" width="50"></a>
+          <a href="https://www.facebook.com/"><img src="C:\Users\ADMIN\OneDrive\Pictures\images.png" height="40"
+              width="50"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

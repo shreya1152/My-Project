@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veggies webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+
+    .container-fluid {
+        background-color: lightcyan;
+    }
+
+    .logo {
+        border: 5px solid lightskyblue;
+        border-radius: 4%;
+    }
+
+    .veggies {
+        display: flex;
+        margin: 10px;
+    }
+
+    .page {
+        display: flex;
+        width: 80%;
+        margin: 50px;
+        justify-content: center;
+        gap: 30px;
+        background-color: lightcyan;
+    }
+
+    .page a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        background-color: lightcyan;
+        font-size: 30px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        margin: 50px;
+        width: 60%;
+    }
+
+    .image {
+        margin-top: 0px;
+    }
+
+
+    .logo {
+        margin: 10px;
+
+    }
+
+    #image {
+        position: relative;
+    }
+
+    .text {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+    }
+
+    #Product {
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+    .vegg {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    .green-veggi {
+        border: 2px solid black;
+        justify-content: center;
+        justify-items: center;
+        margin: 50px;
+        text-align: center;
+        border-radius: 25%;
+    }
+
+    .combine {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .all {
+        justify-content: center;
+        justify-items: center;
+        margin: 40px;
+        text-align: center;
+        border-radius: 9%;
+    }
+
+    #Categories {
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+    .link-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 20px;
+        background-color: aliceblue;
+        border-bottom: 1px;
+    }
+
+    .Quick-link a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .page1 {
+        border-top: 2px solid black;
+        text-align: center;
+
+    }
+
+    button {
+        background-color: lightgrey;
+        height: 30px;
+        width: 100px;
+    }
+    .card{
+        text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+
+        .page,
+        .icons {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 10px 0;
+            gap: 10px;
+        }
+
+        .vegg {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .combine {
+            grid-template-columns: 1fr;
+        }
+
+        .all img {
+            width: 100%;
+            height: auto;
+        }
+
+        .link-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .footer-container {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+        .veggies {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+        }
+
+        .page a {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .vegg {
+            grid-template-columns: 1fr;
+        }
+
+        .green-veggi {
+            margin: 10px 0;
+            width: 90px;
+            max-width: 350px;
+        }
+
+        #image img {
+            width: 100px;
+            height: auto;
+        }
+
+        .text {
+            position: static;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .icons {
+            width: 100%;
+            justify-content: center;
+            margin: 10px 0;
+            gap: 10px;
+        }
+
+        .combine {
+            grid-template-columns: 1fr;
+        }
+
+        .all {
+            margin: 10px auto;
+            width: 95vw;
+            max-width: 350px;
+        }
+
+        .link-container {
+            grid-template-columns: 1fr;
+            margin: 10px 0;
+        }
+
+        .footer-container {
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="veggies">
+            <div class="logo">
+                <div><img src="C:\Users\ADMIN\OneDrive\Pictures\Fresh-vegetables-logo-design-vector-07.jpg" class="img-fluid" height="150"
+                        width="200"></div>
+            </div>
+            <div class="page">
+                <a href="#home">Home</a>
+                <a href="#Product">Product</a>
+                <a href="#Categories">Categories</a>
+            </div>
+            <div class="icons">
+                <a href="#"><img src="C:\Users\ADMIN\Downloads\icons8-search-30.png" class="img-fluid" alt="img" height="20px"
+                        width="30px"></a>
+                <a href="#"><img src="C:\Users\ADMIN\Downloads\shopping-cart.png" class="img-fluid" alt="img" height="20px"
+                        width="30px"></a>
+                <a href="#"><img src="C:\Users\ADMIN\Downloads\user.png" alt="img" class="img-fluid" height="20px" width="30px"></a>
+            </div>
+        </div>
+    </div>
+    <div id="image">
+        <img src="C:\Users\ADMIN\OneDrive\Pictures\AdobeStock_217216886-scaled.jpeg" class="img-fluid" alt="img" height="400"
+            width="100%">
+        <div class="text">
+            <h1>Fresh Veggies, Delivered to Your Doorstep</h1>
+            <p>Discover a world of freshness with our diverse selection of farm-to-table vegetables,</p>
+            <p>offering convenience and quality for your culinary adventures.</p><br>
+            <button type="Shop Now">Shop Now</button>
+        </div>
+    </div>
+    <div id="Product">
+        <div class="container-fluid">
+        <h1>Our Products</h1>
+        <h2>Vegetables</h2>
+    
+    <div class="row">
+
+
+            <div class="col-md-4">
+                <div class="card">
+                <img src="C:\Users\ADMIN\OneDrive\Pictures\1660539949720-sku-0308-1-500x500.webp" class="img-fluid" alt="img" height="200"
+                    width="200">
+                <h1>Tomato</h1>
+                <p>₹ 35/kg</p>
+                <button type="Shop Now">Shop Now</button>
+            </div>
+            </div>
+        
+
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\81mnbeZrRZL.jpg" class="img-fluid" alt="img" height="200" width="200">
+            <h1>Onion</h1>
+            <p>₹20/kg</p>
+            <button type="Shop Now">Shop Now</button>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\8ab8bb60-c6dd-4c31-8eaf-08ba4e79bf75_size3840_cropCenter.jpg" class="img-fluid"
+                alt="img" height="200" width="200">
+            <h1>Potato</h1>
+            <p>₹30/kg</p>
+            <button type="Shop Now">Shop Now</button>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\11iYPjngvyjXbqbzmyxNtpv_OjK1hVxwB_1024x1024.webp" class="img-fluid" alt="img"
+                height="200" width="200">
+            <h1>Flower</h1>
+            <p>₹15/kg</p>
+            <button type="Shop Now">Shop Now</button>
+        </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\SKU-0010_0-1711297292268.webp" class="img-fluid" alt="img" height="200"
+                width="200">
+            <h1>Lady Finger</h1>
+            <p>₹40/kg</p>
+            <button type="Shop Now">Shop Now</button>
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\51GAwEJiviL._UF1000,1000_QL80_.jpg" class="img-fluid" alt="img" height="200"
+                width="200">
+            <h1>Fenugreek</h1>
+            <p>₹30</p>
+            <button type="Shop Now">Shop Now</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <div id="Product">
+
+        <h2>Fruits</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\fresh-red-strawberry-500x500-1.jpg" class="img-fluid" alt="img" height="200"
+                width="200">
+            <h1>Strawberry</h1>
+            <p>₹ 100/kg</p>
+            <button type="Shop Now">Shop Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\pineapple-health-benefits-and-ways-to-enjoy.webp" class="img-fluid" alt="img"
+                height="200" width="200">
+            <h1>Pineapple</h1>
+            <p>₹50/kg</p>
+            <button type="Shop Now">Shop Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\pomme-large.jpg" class="img-fluid" alt="img" height="200" width="200">
+            <h1>Apple</h1>
+            <p>₹200/kg</p>
+            <button type="Shop Now">Shop Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\fresh-fruits-green-grapes-500-gm.jpg" class="img-fluid" alt="img" height="200"
+                width="200">
+            <h1>Grapes</h1>
+            <p>₹80/kg</p>
+            <button type="Shop Now">Shop Now</button>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\165cccc6-0d90-404f-8097-c14c965dc0af-thumb.jpg" class="img-fluid" alt="img"
+                height="200" width="200">
+            <h1>Kivi</h1>
+            <p>₹40/kg</p>
+            <button type="Shop Now">Shop Now</button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\Screenshots\Screenshot 2025-07-08 191629.png" class="img-fluid" alt="img"
+                height="200" width="200">
+            <h1>Mango</h1>
+            <p>₹500</p>
+            <button type="Shop Now">Shop Now</button>
+            
+        </div>
+    </div>
+    <div id="Categories">
+        <h1>Product Categories</h1>
+    </div>
+    <div class="combine">
+        <div class="all">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\Fruits-and-Vegetables.jpg" class="img-fluid" alt="img" height="250" width="350">
+            <h1>Vegetables</h1>
+            <p>Upto 40% off</p>
+            <button type="Shop Now">Shop Now</button>
+        </div>
+        <div class="all">
+            <img src="C:\Users\ADMIN\OneDrive\Pictures\fruit_6c22f2fd-8fa9-4417-a6a3-917ffc5cde9e.jpg"  alt="img"
+                height="250" width="350">
+            <h1>Fruits</h1>
+            <p>Upto 30% off</p>
+            <button type="Shop Now">Shop Now</button>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="link-container">
+            <div class="Quick-link">
+                <h1>Veggies</h1>
+                <p>Explore our vibrant veggie e-commerce hub! From farm-fresh produce to organic delights, discover a
+                    kaleidoscope of vegetables for healthy living, delivered to your doorstep.</p>
+
+                <a href="https://www.instagram.com/"><img src="C:\Users\ADMIN\OneDrive\Pictures\images.jpeg" height="50"
+                        width="50"></a>
+                <a href="https://en.wikipedia.org/wiki/Twitter,_Inc."><img
+                        src="C:\Users\ADMIN\OneDrive\Pictures\twitter-logo-bird-isolated-over-white-background-social-media-networking-communications-symbol-breaking-news-130861855.webp"
+                        height="50" width="50"></a>
+                <a href="https://www.facebook.com/"><img src="C:\Users\ADMIN\OneDrive\Pictures\images.png" height="50"
+                        width="50"></a>
+                <a href="https://in.linkedin.com/"><img src="C:\Users\ADMIN\OneDrive\Pictures\images (1).png"
+                        height="50" width="50"></a>
+            </div>
+            <div class="contact1">
+                <div class="container-contact">
+                    <h1>Contact us</h1>
+                    <p>📞+91 234 635 369</p>
+                    <p>📞+91 504 635 356</p>
+                    <p> @ shreya@gmail.com</p>
+                    <p>Satara,Maharashtra 412205</p>
+                </div>
+            </div>
+            <div class="Quick-link">
+                <h1>Quick Link</h1>
+                <a href="#">Home</a><br>
+                <a href="#">Product</a><br>
+                <a href="#">Categories</a>
+            </div>
+            <div class="News-latter">
+                <p>Subscribe to the Veggies</p>
+                <input type="email" placeholder="your email"><br><br>
+                <button type="Shop Now">Subscribe</button><br>
+                <a href="#"><img src="C:\Users\ADMIN\OneDrive\Pictures\vector-credit-card-icon.jpg" height="45"
+                        width="45"></a>
+                <a href="#"><img src="C:\Users\ADMIN\OneDrive\Pictures\images (2).png" height="40" width="40"></a>
+            </div>
+        </div>
+        <div class="page1">
+            <p>Created by MSB | © All rights reserved.</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

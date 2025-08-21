@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #a7ede0, #acb8ed);
+        font-family: Arial, sans-serif;
+        padding: 30px;
+    }
+
+    .card {
+        padding: 20px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(222, 10, 10, 0.2);
+    }
+</style>
+
+<body>
+<div class="container">
+    <h2 class="text-center mb-4">Weather App UI</h2><br><br>
+    <div class="d-flex justify-content-center mb-3">
+        <select id="citySelect" class="form-select w-50">
+            <option value="mumbai">Mumbai</option>
+            <option value="delhi">Delhi</option>
+            <option value="newyork">New York</option>
+            <option value="Satara">Satara</option>
+        </select>
+    </div>
+
+
+    <div class="row justify-content-center">
+        <div class="card text-center">
+            <div class="col-md-6">
+                <h4 class="text-center bg-light">WeatherCard</h4>
+                <p class="text-center">Mumbai</p>
+                <p class="text-center ">☀️</p>
+                <p class="text-center">30°C</p>
+                <p class="text-center">Sunny</p>
+                <button class="btn bg-info toggle-btn" onclick="toggleTemp()">Toggle °C/°F</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+<script>
+    const weatherData = {
+        mumbai: { tempC: 30, icon: "☀️", desc: "Sunny" },
+        delhi: { tempC: 28, icon: "⛅", desc: "Partly Cloudy" },
+        newyork: { tempC: 22, icon: "🌧️", desc: "Rainy" }
+    };
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

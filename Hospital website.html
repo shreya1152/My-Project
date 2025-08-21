@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital website</title>
+  <link rel="stylesheet" href="Boostrap file.css">
+</head>
+<style>
+  #Contact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px;
+    background-color: black;
+    border-bottom: 1px;
+    color: white;
+  }
+
+  .Quick-link a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: lightslategrey;
+  }
+
+  .main a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: lightslategrey;
+
+  }
+
+  .logo {
+    background-color: lightslategrey;
+
+  }
+
+  h1 {
+    text-align: center;
+    font-style: italic;
+  }
+
+  .page1 {
+    border-top: 2px solid black;
+    text-align: center;
+  }
+
+  .form {
+    justify-content: center;
+    justify-items: center;
+    background-color: lightgray;
+  }
+
+</style>
+
+<body>
+  <div class="container-fluid">
+    <div class="mein">
+      <div class="logo">
+        <div><img src="C:\Users\ADMIN\OneDrive\Pictures\360_F_645268248_8y6T8zhRTagPtyLz4HN1LAn7Duc9bZwr.jpg"
+            height="100" width="200"></div>
+      </div>
+        <div class="main">
+        <a href="#home">Home |</a>
+        <a href="#About">About |</a>
+        <a href="#Departments">Departments |</a>
+        <a href="#Contact">Contact |</a>
+        </div>
+    </div>
+    <div class="Hero-Section">
+      <div id="home">
+        <img
+          src="C:\Users\ADMIN\OneDrive\Pictures\modern-hospital-building-advanced-healthcare-facility_1328094-3039.avif"
+          height="500" width="100%">
+      </div>
+    </div><br><br>
+    <div id="About" class="container">
+      <h1>About Hospital</h1>
+      <div class="row">
+        <div class="col-6 bg-light">
+          <p>A hospital is a healthcare institution that provides comprehensive medical services, including diagnosis,
+            treatment, and rehabilitation, for both inpatients and outpatients. Hospitals are equipped with specialized
+            staff, advanced medical equipment, and facilities to offer a wide range of healthcare services. They also
+            play a crucial role in medical education, research, and disease prevention.</p>
+        </div>
+        <div class="col-6">
+          <img src="C:\Users\ADMIN\OneDrive\Pictures\Vacant-Hospital-Bed-Room-Empty.jpg" height="200" width="500">
+        </div>
+      </div>
+    </div><br><br>
+    <div id="Departments" class="container">
+      <h1>Our Departments</h1><br>
+      <div class="row text-center">
+        <div class="col-4 border 50px black">
+          <h2>Cardiology</h2>
+          <p>Expert heart care with modern technology.</p>
+        </div>
+        <div class="col-4 border 50px black">
+          <h2>Neurology</h2>
+          <p>Advanced treatment for brain and nerve disorders.</p>
+        </div>
+        <div class="col-4 border 50px black">
+          <h2>Pediatrics</h2>
+          <p>Compassionate care for children and teens.</p>
+        </div>
+      </div>
+    </div><br><br>
+    <div class="container">
+      <h1>Doctors Info</h1>
+      <div class="row text-center">
+        <div class="col-4 border 50px black">
+          <img src="C:\Users\ADMIN\OneDrive\Pictures\pngtree-female-doctor-avatar-vector-design-png-image_9828008.png"
+            height="200" width="200">
+          <h3>Dr. Anjali Patil</h3>
+          <p>Cardiology</p>
+        </div>
+        <div class="col-4 border 50px black">
+          <img src="C:\Users\ADMIN\OneDrive\Pictures\3774299.png" height="200" width="200">
+          <h3>Dr. Shreyash Mane</h3>
+          <p>Pediatrics</p>
+        </div>
+        <div class="col-4 border 50px black">
+          <img src="C:\Users\ADMIN\OneDrive\Pictures\3304567.png" height="200" width="200">
+          <h3>Dr. Shreya Mane</h3>
+          <p>Neurology</p>
+        </div>
+      </div>
+    </div><br><br>
+    <div class="form">
+      <h1>Appointment Form Section</h1>
+      <form action="1">
+        <label for="Full Name:">Full Name:</label><br>
+        <input type="text"class="form-control p-1" placeholder="Enter Name" required><br>
+        <label for="Address:">Address:</label><br>
+        <input email="text" class="form-control p-1" placeholder="Enter Address" required><br>
+        <label for="Age:">Age:</label><br>
+        <input number="number" class="form-control p-1" placeholder="Enter Age" required><br>
+        <label for="date">Date of Appointment:</label><br>
+        <input type="date" id="date" class="form-control p-1" name="date"><br>
+        <label for="Gender">Gender</label><br>
+        <input type="radio" name="Gender" id="Male">Male<br>
+        <input type="radio" name="Gender" id="Female">Female<br>
+        <input type="submit" class="form-control p-1" value="submit">
+      </form>
+    </div>
+    <div class="footer-container">
+      <div id="Contact">
+        <div class="Quick-link">
+          <h2>Hospital</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque explicabo officiis, neque quisquam
+            consequuntur enim..</p>
+
+        </div>
+        <div class="contact1">
+          <div class="container-contact">
+            <h2>Contact us</h2>
+            <p>📞+91 234 635 369</p>
+            <p>📞+91 504 635 356</p>
+            <p> @ hospital@gmail.com</p>
+            <p>Satara,Maharashtra 412205</p>
+          </div>
+        </div>
+        <div class="Quick-link">
+          <h2>Quick Link</h2>
+          <a href="#">Home</a><br>
+          <a href="#">About</a><br>
+          <a href="#">Departments</a><br>
+          <a href="#">Contact</a>
+        </div>
+        <div class="follow">
+          <h2>Follow US</h2>
+          <a href="https://www.instagram.com/"><img src="C:\Users\ADMIN\OneDrive\Pictures\images.jpeg" height="50"
+              width="50"></a>
+          <a href="https://en.wikipedia.org/wiki/Twitter,_Inc."><img
+              src="C:\Users\ADMIN\OneDrive\Pictures\twitter-logo-bird-isolated-over-white-background-social-media-networking-communications-symbol-breaking-news-130861855.webp"
+              height="50" width="50"></a>
+          <a href="https://www.facebook.com/"><img src="C:\Users\ADMIN\OneDrive\Pictures\images.png" height="50"
+              width="50"></a>
+          <a href="https://in.linkedin.com/"><img src="C:\Users\ADMIN\OneDrive\Pictures\images (1).png" height="50"
+              width="50"></a>
+        </div>
+      </div>
+      <div class="page1">
+        <p>Created by MSB | © All rights reserved.</p>
+      </div>
+    </div>
+</body>
+
+</html>

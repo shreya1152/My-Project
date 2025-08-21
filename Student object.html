@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            maths: 65,
+            science: 80,
+            english: 90
+        };
+
+        let total = 0;
+
+        for (let sub in student) {
+            total += student[sub];
+        }
+
+        console.log("Total of Subjects:", total);
+
+    </script>
+</body>
+
+</html>
